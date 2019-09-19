@@ -1,0 +1,29 @@
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+
+<header>
+  <h1>Hi <%= name %></h1>
+  <h2>Your Contacts</h2>
+</header>
+<main>
+  <script src = "js/client.js"></script>
+  <p>Add a new contact:</p>
+  <form id="submitform">
+    <input id="fName" type="text" maxlength="100" placeholder="FirstName"> <input id="lName" type="text" maxlength="100" placeholder="LastName"> <input id="phone" type="text" maxlength="100" placeholder="555-555-5555">
+    <button type="submit">Submit</button>
+    <script id = user> <% email %> </script>
+  </form>
+  <p>List of Contacts:</p>
+  <section class="contacts">
+    <ul id="contacts">
+    </ul>
+    <div id = "table" class = "labelInput"></div>
+  </section>
+  <p><a href="/clear">Delete All</a></p>
+  <form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+  </form>'
+</main>
+
