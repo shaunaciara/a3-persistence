@@ -102,7 +102,7 @@ app.set('views', __dirname + '/public/views');
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 app.use(flash())
-app.use(session({secret: '{secret}', name: 'session_id', saveUninitialized: true, resave: true})); //This is the line i use in my code that worked
+app.use(session({secret: '{secret}', name: 'session_id', saveUninitialized: true, resave: true})); 
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOverride('_method'))
